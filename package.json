@@ -1,7 +1,7 @@
 {
   "name": "apto",
   "version": "1.0.0",
-  "description": "Penny rounding problem for coding challenge",
+  "description": "Penny rounding problem for Apto coding exercise",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/appellod/penny-rounding"
+    "url": "https://github.com/appellod/penny-rounding"
   },
   "author": "Dan Appello",
   "license": "ISC",
