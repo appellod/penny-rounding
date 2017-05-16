@@ -1,0 +1,22 @@
+{
+  "name": "apto",
+  "version": "1.0.0",
+  "description": "Penny rounding problem for coding challenge",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/appellod/penny-rounding"
+  },
+  "author": "Dan Appello",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1"
+  }
+}
