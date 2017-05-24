@@ -89,12 +89,29 @@ describe("lib/money-splitter.js", function() {
 	});
 
 	describe("split()", function() {
-		it("splits the total into 3 roughly equivalent partitions", function() {
+		it("splits a total of 800 into 3 roughly equivalent partitions", function() {
 			const results = moneySplitter.split(800, 3);
 
 			expect(results[0]).to.eq(266.66);
 			expect(results[1]).to.eq(266.67);
 			expect(results[2]).to.eq(266.67);
+		});
+
+        it("splits a total of 0.85 into 3 roughly equivalent partitions", function() {
+			const results = moneySplitter.split(0.85, 3);
+
+			expect(results[0]).to.eq(0.28);
+			expect(results[1]).to.eq(0.28);
+			expect(results[2]).to.eq(0.29);
+		});
+
+        it("splits a total of 0.58 into 4 roughly equivalent partitions", function() {
+			const results = moneySplitter.split(0.58, 4);
+
+			expect(results[0]).to.eq(0.14);
+			expect(results[1]).to.eq(0.14);
+			expect(results[2]).to.eq(0.15);
+            expect(results[3]).to.eq(0.15);
 		});
 	});
 });
